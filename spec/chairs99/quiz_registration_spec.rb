@@ -14,7 +14,7 @@ RSpec.describe 'Quiz login is working', type: :feature do
       end
       fill_in('first_name', with: 'Alina')
       fill_in('last_name', with: 'Ghetler')
-      fill_in('email', with: 'alina.35@gmail.com')
+      fill_in('email', with: 'alina.ghetler1@gmail.com')
       fill_in('password', with: '99scaunePass')
       find('.button-inverse').click
       sleep(2)
