@@ -1,7 +1,7 @@
 RSpec.describe 'Quiz login is working', type: :feature do
   before do
     visit 'https://app-staging.99chairs.com/'
-    Capybara.current_session.current_window.resize_to(2500,2500)
+    #Capybara.current_session.current_window.resize_to(2500,2500)
   end
   context 'Quiz login scenarion' do
     it 'should open the page' do
@@ -14,10 +14,11 @@ RSpec.describe 'Quiz login is working', type: :feature do
       end
       fill_in('first_name', with: 'Alina')
       fill_in('last_name', with: 'Ghetler')
-      fill_in('email', with: 'alina.9@gmail.com')
+      fill_in('email', with: 'alina.10@gmail.com')
       fill_in('password', with: '99scaunePass')
       find('.button-inverse').click
       sleep(1)
+      #expect(page).to have_text('Vielen Dank')
     end
   end
 end
